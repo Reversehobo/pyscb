@@ -2,9 +2,15 @@
 name = "scb"
 version = "0.1.0"
 description = "Python wrapper for PxApi 2.0 and 1.0"
-authors = ["Ruben Selander"]
+authors = ["Ruben Selander <ruben.selander@nordicintel.com>"]
 license = "MIT"
 readme = "README.md"
+homepage = "https://github.com/Reversehobo/pyscb"
+repository = "https://github.com/Reversehobo/pyscb"
+documentation = "https://github.com/Reversehobo/pyscb/README.md"
+classifiers = [
+    "Development Status :: 1 - Planning",
+]
 
 [tool.poetry.dependencies]
 python = "^3.9"
