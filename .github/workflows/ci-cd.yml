@@ -1,6 +1,10 @@
 name: ci-cd
 
-on: [push, pull_request]
+on: 
+  push:
+  pull_request:
+  workflow_dispatch:  # Add this line
+
 
 jobs:
   ci:
@@ -76,7 +80,7 @@ jobs:
         with:
           user: __token__
           password: ${{ secrets.TEST_PYPI_API_TOKEN }}
-          repository_url: https://test.pypi.org/legacy/
+          repository-url: https://test.pypi.org/legacy/
 
       - name: Test install from TestPyPI
         run: |
