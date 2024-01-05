@@ -66,6 +66,16 @@ jobs:
       - name: Install package
         run: poetry install
 
+      - name: Print environment information
+        run: |
+          echo "Environment Variables:"
+          env
+          echo "Python Version:"
+          python --version
+          echo "Installed Packages:"
+          pip list
+      
+
       - name: Use Python Semantic Release to prepare release
         env:
           # This token is created automatically by GH Actions
