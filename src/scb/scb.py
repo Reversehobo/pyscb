@@ -55,5 +55,5 @@ class PxApi:
 
 
 # # Example usage
-# api = PxApiWrapper("https://api.example.com")
-# navigation = api.get_navigation()
+api = PxApi("https://api.example.com")
+navigation = api.get_navigation()
