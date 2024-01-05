@@ -10,6 +10,8 @@ readme = "README.md"
 python = "^3.9"
 
 [tool.poetry.dev-dependencies]
+pytest
+
 [tool.semantic_release]
 version_variable = "pyproject.toml:version" # version location
 branch = "main"                             # branch to make releases of
